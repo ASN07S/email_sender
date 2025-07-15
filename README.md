@@ -31,7 +31,6 @@ This project is a full-stack solution ideal for showcasing skills in:
 ---
 
 
-## 🧱 Architecture Diagrams
 
 ## 🧱 Architecture Diagrams
 
