@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Email Sender</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">📧 Email Sender</a>
+      <div class="d-flex">
+        <span class="navbar-text me-3">Hello, {{ user }}</span>
+        <a href="/logout" class="btn btn-outline-light btn-sm">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-4">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% for category, message in messages %}
+        <div class="alert alert-{{ category }}">{{ message }}</div>
+      {% endfor %}
+    {% endwith %}
+
+
+
+     <div class="card">
+      <div class="card-header">Activate Interface</div>
+      <div class="card-body">
+        <form method="POST" action="/activate" class="row g-3">
+          <div class="col-md-6">
+            <label>Interface</label>
+            <select name="interface" class="form-select" required>
+              <option value="gmail_api">gmail_api</option>
+              <option value="app_password">app_password</option>
+              <option value="mix_domain">mix_domain</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label>Activation Key</label>
+            <input type="text" name="key" class="form-control" required>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-success">Activate</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    
+
+    <div class="card mb-4">
+      <div class="card-header">Send Email</div>
+      <div class="card-body">
+        <form method="POST" action="/send_email">
+          <div class="row mb-3">
+            <div class="col-md-4">
+              <label>Interface</label>
+              <select name="interface" class="form-select" required>
+                <option value="">Select</option>
+                {% for iface in ['gmail_api', 'app_password', 'mix_domain'] %}
+                  <option value="{{ iface }}">{{ iface }} {% if activated.get(iface) %}(active till {{ activated[iface] }}){% endif %}</option>
+                {% endfor %}
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label>To</label>
+              <input type="email" name="recipient" class="form-control" required>
+            </div>
+            <div class="col-md-4">
+              <label>Subject</label>
+              <input type="text" name="subject" class="form-control" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label>Message</label>
+            <textarea name="body" rows="5" class="form-control" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
+    </div>
+
+   
+  </div>
+</body>
+</html>
