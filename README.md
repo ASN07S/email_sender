@@ -30,6 +30,27 @@ This project is a full-stack solution ideal for showcasing skills in:
 
 ---
 
+
+## 🧱 Architecture Diagrams
+
+<div align="center">
+
+  <table>
+    <tr>
+      <td align="center">
+        <strong>📂 Current Architecture (JSON-based)</strong><br>
+        <img src="workflow/current.png" width="400"/>
+      </td>
+      <td align="center">
+        <strong>🔮 Future Architecture (DB + Auth Layer)</strong><br>
+        <img src="workflow/With DB.png" width="400"/>
+      </td>
+    </tr>
+  </table>
+
+</div>
+
+
 ## 📁 Folder Structure
 
 ```
