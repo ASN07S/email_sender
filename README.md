@@ -33,17 +33,25 @@ This project is a full-stack solution ideal for showcasing skills in:
 
 ## 🧱 Architecture Diagrams
 
+## 🧱 Architecture Diagrams
+
 <div align="center">
 
   <table>
     <tr>
       <td align="center">
         <strong>📂 Current Architecture (JSON-based)</strong><br>
-        <img src="workflow/current.png" width="400"/>
+        <img src="workflow/current.png" width="400"/><br>
+        <p align="left" style="max-width: 400px;">
+          This version uses a fully local file-based architecture. User credentials, activation keys, and email logs are stored in `users.json`, `activations.json`, and `logs.json`. It's simple, fast to prototype, and perfect for demo projects without needing a backend database. The app simulates licensing via activation keys and sends emails using an SMTP server like Gmail.
+        </p>
       </td>
       <td align="center">
         <strong>🔮 Future Architecture (DB + Auth Layer)</strong><br>
-        <img src="workflow/With DB.png" width="400"/>
+        <img src="workflow/With DB.png" width="400"/><br>
+        <p align="left" style="max-width: 400px;">
+          The future-ready system upgrades to a real-world structure with PostgreSQL/MySQL for persistent data storage. An authentication service validates credentials and sessions. Activation and email logs are stored in structured tables. This design supports better scalability, security, and easier integration with admin dashboards or analytics tools.
+        </p>
       </td>
     </tr>
   </table>
