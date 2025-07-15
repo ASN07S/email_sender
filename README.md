@@ -99,13 +99,13 @@ While this app works perfectly with JSON, you can scale it up:
 ## 📸 Screenshots
 
 ### 🔐 Register Page
-![Login Page](screenshots/Register.png)
+![Register Page](workflow/Register.png)
 
 ### 🔐 Login Page
 ![Login Page](workflow/Login.png)
 
 ### 🏠 Dashboard with Interfaces
-![Dashboard](screenshots/Dashboard.png)
+![Dashboard](workflow/Dashboard.png)
 
 
 
