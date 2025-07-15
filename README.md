@@ -104,17 +104,17 @@ While this app works perfectly with JSON, you can scale it up:
     <tr>
       <td align="center">
         <strong>🔐 Register Page</strong><br>
-        <img src="workflow/Register.png" width="300"/>
+        <img src="workflow/Register.png" width="350"/>
       </td>
       <td align="center">
         <strong>🔐 Login Page</strong><br>
-        <img src="workflow/Login.png" width="300"/>
+        <img src="workflow/Login.png" width="350"/>
       </td>
     </tr>
     <tr>
       <td colspan="2" align="center">
         <strong>🏠 Dashboard with Interfaces</strong><br>
-        <img src="workflow/Dashboard.png" width="600"/>
+        <img src="workflow/Dashboard.png" width="350"/>
       </td>
     </tr>
   </table>
