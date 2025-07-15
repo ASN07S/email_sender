@@ -98,7 +98,16 @@ While this app works perfectly with JSON, you can scale it up:
 
 ## 📸 Screenshots
 
-![Login Page](workflow/login.png)
+### 🔐 Register Page
+![Login Page](screenshots/Register.png)
+
+### 🔐 Login Page
+![Login Page](workflow/Login.png)
+
+### 🏠 Dashboard with Interfaces
+![Dashboard](screenshots/Dashboard.png)
+
+
 
 ---
 
