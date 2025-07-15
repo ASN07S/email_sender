@@ -98,18 +98,28 @@ While this app works perfectly with JSON, you can scale it up:
 
 ## 📸 Screenshots
 
-### 🔐 Register Page
-![Register Page](workflow/Register.png)
+<div align="center">
 
-### 🔐 Login Page
-![Login Page](workflow/Login.png)
+  <table>
+    <tr>
+      <td align="center">
+        <strong>🔐 Register Page</strong><br>
+        <img src="workflow/Register.png" width="300"/>
+      </td>
+      <td align="center">
+        <strong>🔐 Login Page</strong><br>
+        <img src="workflow/Login.png" width="300"/>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <strong>🏠 Dashboard with Interfaces</strong><br>
+        <img src="workflow/Dashboard.png" width="600"/>
+      </td>
+    </tr>
+  </table>
 
-### 🏠 Dashboard with Interfaces
-![Dashboard](workflow/Dashboard.png)
-
-
-
----
+</div>
 
 ## 🧠 Use Cases
 
