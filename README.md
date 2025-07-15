@@ -98,7 +98,7 @@ While this app works perfectly with JSON, you can scale it up:
 
 ## 📸 Screenshots
 
-> (Add UI screenshots of login, dashboard, and email confirmation)
+![Login Page](workflow/login.png)
 
 ---
 
